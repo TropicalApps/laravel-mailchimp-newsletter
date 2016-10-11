@@ -1,13 +1,8 @@
 # jeffer8a/laravel-mailchimp-newsletter
-A minimal service provider to set up and use the Mailchimp APi v2 PHP library in Laravel v5.*
 
-For Laravel v4 check https://packagist.org/packages/hugofirth/mailchimp
+Simple laravel 5.* mailchimp newsletter subscription box.
 
-
-## How it works
-This package contains a service provider, which binds an instance of an initialized Mailchimp client to the IoC-container.
-
-You recieve the Mailchimp client through depencency injection already set up with your own API key.
+This package is based in the "https://github.com/skovmand/mailchimp-laravel#mand/mailchimp-laravel" package.
 
 ## Install
 
