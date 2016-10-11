@@ -3,7 +3,8 @@
 use Illuminate\Support\ServiceProvider;
 use Mailchimp;
 
-class MailchimpServiceProvider extends ServiceProvider {
+class MailchimpServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -19,7 +20,22 @@ class MailchimpServiceProvider extends ServiceProvider {
     {
         $this->publishes([
             __DIR__ . '/../config/mailchimp.php' => config_path('mailchimp.php')
-        ]);
+        ], 'config');
+
+        $this->publishes([
+            __DIR__ . '/../Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
+        ], 'newsletter-controller');
+
+        $this->publishes([
+            __DIR__ . '/../Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
+        ], 'newsletter-request');
+
+        $this->publishes([
+            __DIR__ . '/../config/mailchimp.php' => config_path('mailchimp.php'),
+            __DIR__ . '/../Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
+            __DIR__ . '/../Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
+        ], 'all');
+
     }
 
     /**

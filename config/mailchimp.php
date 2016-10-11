@@ -11,5 +11,11 @@ return [
     |
      */
 
-    'apikey' => env('MAILCHIMP_API_KEY')
+    'apikey' => env('MAILCHIMP_API_KEY'),
+    'list-id' => env('MAILCHIMP_LIST_ID'),
+
+    // response messages
+    'messages' => [
+        'success' => 'You are subscribed to our newsletter. Please check your inbox.'
+    ]
 ];

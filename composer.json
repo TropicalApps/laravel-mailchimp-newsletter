@@ -1,5 +1,5 @@
 {
-  "name": "jeffer8a/mailchimp-laravel",
+  "name": "jeffer8a/laravel-mailchimp-newsletter",
   "description": "Simple mailchimp newsletter subscription box for Laravel 5.* with Bootstrap 3",
   "license": "MIT",
   "require": {
