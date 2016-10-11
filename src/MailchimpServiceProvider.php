@@ -19,21 +19,21 @@ class MailchimpServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/mailchimp.php' => config_path('mailchimp.php')
+            __DIR__ . 'config/mailchimp.php' => config_path('mailchimp.php')
         ], 'config');
 
         $this->publishes([
-            __DIR__ . '/../Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
+            __DIR__ . 'Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
         ], 'newsletter-controller');
 
         $this->publishes([
-            __DIR__ . '/../Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
+            __DIR__ . 'Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
         ], 'newsletter-request');
 
         $this->publishes([
-            __DIR__ . '/../config/mailchimp.php' => config_path('mailchimp.php'),
-            __DIR__ . '/../Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
-            __DIR__ . '/../Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
+            __DIR__ . 'config/mailchimp.php' => config_path('mailchimp.php'),
+            __DIR__ . 'Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
+            __DIR__ . 'Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
         ], 'all');
 
     }
