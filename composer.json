@@ -1,5 +1,5 @@
 {
-  "name": "jeffer8a/laravel-mailchimp-newsletter",
+  "name": "tropicalapps/laravel-mailchimp-newsletter",
   "description": "Simple mailchimp newsletter subscription box for Laravel 5.* with Bootstrap 3",
   "license": "MIT",
   "require": {
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Jeff\\Mailchimp\\": "src/"
+      "TropicalApps\\Mailchimp\\": "src/"
     }
   }
 }

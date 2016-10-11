@@ -1,4 +1,4 @@
-<?php namespace Jeff\Mailchimp;
+<?php namespace TropicalApps\Mailchimp;
 
 use Illuminate\Support\ServiceProvider;
 use Mailchimp;

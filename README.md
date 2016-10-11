@@ -1,4 +1,4 @@
-# jeffer8a/laravel-mailchimp-newsletter
+# tropicalapps/laravel-mailchimp-newsletter
 
 Simple laravel 5.* mailchimp newsletter subscription box.
 
@@ -8,7 +8,7 @@ This package is based in the "https://github.com/skovmand/mailchimp-laravel#mand
 
 ```json
 "require": {
-    "jeffer8a/laravel-mailchimp-newsletter": "0.1.*",
+    "tropicalapps/laravel-mailchimp-newsletter": "0.1.*",
 }
 ```
 
@@ -18,14 +18,14 @@ Go to ```config/app.php``` and edit the ```providers``` array
 
 ```php
 'providers' => [
-	Jeff\Mailchimp\MailchimpServiceProvider::class,
+	TropicalApps\Mailchimp\MailchimpServiceProvider::class,
 ]
 ```
 
 ## Publish files
 
 ```
-php artisan vendor:publish --provider="Jeff\Mailchimp\MailchimpServiceProvider" --tag=all
+php artisan vendor:publish --provider="TropicalApps\Mailchimp\MailchimpServiceProvider" --tag=all
 ```
 
 config     ```config/mailchimp.php```
