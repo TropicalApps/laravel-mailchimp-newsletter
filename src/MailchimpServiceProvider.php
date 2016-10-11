@@ -31,9 +31,14 @@ class MailchimpServiceProvider extends ServiceProvider
         ], 'newsletter-request');
 
         $this->publishes([
+            __DIR__ . '/views' => resource_path('views'),
+        ], 'newsletter-views');
+
+        $this->publishes([
             __DIR__ . '/config/mailchimp.php' => config_path('mailchimp.php'),
             __DIR__ . '/Controllers/NewsletterController.php' => app_path('Http/Controllers/NewsletterController.php'),
             __DIR__ . '/Requests/SubscriptionRequest.php' => app_path('Http/Requests/SubscriptionRequest.php'),
+            __DIR__ . '/views' => resource_path('views')
         ], 'all');
 
     }
